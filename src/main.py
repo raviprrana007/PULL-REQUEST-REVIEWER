@@ -11,7 +11,7 @@ from src.agents.pr_reviewer import PRReviewerAgent
 def main():
     github_token = os.getenv("GITHUB_TOKEN")
     event_path = os.getenv("GITHUB_EVENT_PATH")
-
+    nvidia_api = os.getenv("NVIDIA_API_KEY")
     if not all([github_token, event_path]):
         print("Missing required environment variables: GITHUB_TOKEN, GITHUB_EVENT_PATH.")
         sys.exit(1)
