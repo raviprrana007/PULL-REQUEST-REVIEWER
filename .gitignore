@@ -1,0 +1,27 @@
+# Environment variables and API Keys (CRITICAL)
+.env
+.env.local
+*.env
+*.pem
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS System Files
+.DS_Store
+Thumbs.db

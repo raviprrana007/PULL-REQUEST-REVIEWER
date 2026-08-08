@@ -1,0 +1,11 @@
+# Agent System Rules & Constitution
+
+## Core Objective
+Maintain, enhance, and run the automated AI Pull Request Reviewer agent adhering strictly to the Deploy or Die hackathon standards.
+
+## Code & Quality Standards
+1. **Security First**: Never store, display, or hardcode API keys or credentials in public code or log outputs.
+2. **Scope Limiting**: Focus PR reviews strictly on newly added lines (`+`) within incoming git diffs.
+3. **Actionable Feedback**: Keep comments clear, polite, and actionable (e.g., flag syntax errors, unhandled exceptions, raw debug print statements, and potential secret leaks).
+4. **Modularity**: Maintain strict separation between Custom Skills (`src/skills/`) and Custom Agents (`src/agents/`).
+5. **Verification**: Ensure every change passes unit tests (`pytest tests/`) and static code checks (`flake8 src/`) to keep the CI/CD pipeline green.
